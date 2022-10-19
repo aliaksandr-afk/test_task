@@ -1,0 +1,27 @@
+@import "nullstyle.scss";
+
+$fz: 24px;
+
+
+.block {
+    padding: 30px;
+    font-size: $fz;
+    line-height: 60px;
+    span {
+        color: green;
+    }
+    >p{
+        color: red;
+    }
+    .block__text {
+        font-size: $fz
+    }
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+    &:hover {
+        color: green;
+    }
+}
