@@ -19,7 +19,6 @@ body {
 [class*="container"] {
     max-width: 1200px;
     margin: 0px auto;
-    border: 1px solid red;
     padding: 0px 15px;
 }
 
@@ -122,6 +121,7 @@ body {
     text-transform: uppercase;
     padding: 15px 32px;
     background: #FFFFFF;
+    color: #000000;
     border: 1px solid #2A2B30;
     border-radius: 4px;
     transition: background-color 0.3s ease 0s;
@@ -222,8 +222,65 @@ body {
 }
 
 .main {
+}
+
+/*=================================================*/
+
+.color {
+    color: #07C8C8;
+    font-weight: 700;
+}
+
+.info {
+    height: 850px;
+    padding: 200px 0 0 0;
+    background-image: url(../img/bg1.jpg);
+}
+
+.block-text {
+    max-width: 780px;
+    border: 1px solid red;
+}
+
+.block-text__title {
+    font-size: 48px;
+}
+
+.text__list{
+        list-style: none;
+    
+    li:before {
+        content:  "-";
+        position: relative;
+        left:     -5px;
+    }
+}
+
+.text__main {
+    p {
+        font-weight: 700;
+    }
+}
+
+.text__item {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.block-text__buttons {
     display: flex;
-    height: 2000px;
-    border: 1px solid blue;
-    padding: 100px 0 0 0;
+    flex-direction: row;
+    font-size: 13px;
+}
+
+.block-text__button_order {
+    background: #07C8C8;
+    color: #FFFFFF;
+}
+
+.order {
+    background: #272733;
+    height: 500px;
+    max-height: 920px;
+    background: url(../img/bg2.png), #272733;
 }
