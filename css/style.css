@@ -183,7 +183,6 @@ body {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  padding: 15px 32px;
   background: #FFFFFF;
   color: #000000;
   border: 1px solid #2A2B30;
@@ -291,6 +290,12 @@ body {
 
 .block-text__title {
   font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+.block-text__text {
+  padding: 90px 0 80px 0;
 }
 
 .text__list {
@@ -304,11 +309,18 @@ body {
 
 .text__main p {
   font-weight: 700;
+  padding-bottom: 10px;
 }
 
 .text__item {
   font-weight: 400;
   font-size: 20px;
+  line-height: 24px;
+  padding: 5px 0px 0px 17px;
+}
+.text__item:before {
+  margin-left: -3px;
+  margin-right: 3px;
 }
 
 .block-text__buttons {
@@ -316,15 +328,269 @@ body {
   flex-direction: row;
   font-size: 13px;
 }
+.block-text__buttons .button {
+  font-size: 13px;
+  line-height: 16px;
+}
 
 .block-text__button_order {
+  padding: 11px 67px;
   background: #07C8C8;
   color: #FFFFFF;
+  margin-right: 30px;
+}
+
+.block-text__button_more-info {
+  padding: 11px 55px;
 }
 
 .order {
   background: #272733;
-  height: 500px;
+  height: 920px;
   max-height: 920px;
   background: url(../img/bg2.png), #272733;
+}
+
+.order-text {
+  padding: 120px 0 80px 0;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+}
+.order-text h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fff;
+}
+.order-text p {
+  padding-top: 28px;
+  color: #fff;
+}
+
+.order-stages__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.order-stages__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 209px;
+  border: 1px solid green;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.order-stages__list :last-child {
+  margin: 0px;
+}
+.order-stages__list :last-child:after {
+  display: none;
+}
+
+.stage-item__wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #07C8C8;
+  border: 5px solid #14317B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stage-item__wrap img {
+  display: block;
+  max-width: 100px;
+}
+
+.stage-item__text {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 20px;
+  font-family: "Lato";
+  font-style: normal;
+}
+
+.stage-item__points {
+  position: absolute;
+  top: 50px;
+  left: 166px;
+}
+.stage-item__points ul {
+  display: flex;
+}
+.stage-item__points ul li {
+  background: #fff;
+  width: 6px;
+  height: 6px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.order-form {
+  padding: 44px 0 0 0;
+}
+
+.form__inputs {
+  display: flex;
+}
+
+.form__input {
+  width: 370px;
+  height: 48px;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0 0 0 10px;
+}
+
+.form__select, .form__email {
+  margin-right: 30px;
+}
+
+.form__select {
+  position: relative;
+  width: 370px;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  background: #fff;
+}
+.form__select[data-state=active] {
+  border: 1px solid rgba(61, 64, 80, 0.85);
+}
+.form__select[data-state=active] .form__select-title {
+  color: #FFFFFF;
+  background: rgba(61, 64, 80, 0.85);
+}
+.form__select[data-state=active] .form__select-title::before {
+  transform: translate(-1px, -50%) rotate(-45deg);
+  background: #FFFFFF;
+}
+.form__select[data-state=active] .form__select-title::after {
+  transform: translate(3px, -50%) rotate(45deg);
+  background: #FFFFFF;
+}
+.form__select[data-state=active] .form__select-content {
+  opacity: 1;
+}
+.form__select[data-state=active] .form__select-label + .form__select-input + .form__select-label {
+  max-height: 48px;
+  min-height: 48px;
+  border-top-width: 1px;
+}
+
+.form__select-title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.form__select-title::before, .form__select-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  width: 6px;
+  height: 2px;
+  transition: all 0.3s ease-out;
+  background-color: #333333;
+  transform: translate(-1px, -50%) rotate(45deg);
+}
+.form__select-title::after {
+  transform: translate(3px, -50%) rotate(-45deg);
+}
+.form__select-title:hover {
+  border-color: #D8093A;
+}
+.form__select-title:hover::before, .form__select-title:hover::after {
+  background-color: #D8093A;
+}
+
+.form__select-content {
+  border: 1px solid #3D4050;
+  border-radius: 3px;
+  height: 180px;
+  position: absolute;
+  top: 46px;
+  left: -1px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% + 2px);
+  color: #FFFFFF;
+  background: #272733;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  z-index: 8;
+}
+
+.form__select-input {
+  display: none;
+}
+.form__select-input:checked + label {
+  background-color: #dedede;
+}
+.form__select-input:disabled + label {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.form__select-label {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  max-height: 0;
+  padding: 0 16px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+.form__select-label:hover {
+  color: #07C8C8;
+}
+
+.form__select-content::-webkit-scrollbar {
+  width: 7px; /* ширина всей полосы прокрутки */
+  border-radius: 3px;
+  background-color: #272733;
+}
+
+.form__select-content::-webkit-scrollbar-track {
+  background: #3D4050;
+  border-radius: 30px;
+  margin: 2px; /* цвет зоны отслеживания */
+}
+
+.form__select-content::-webkit-scrollbar-thumb {
+  background: #07C8C8; /* цвет бегунка */
+  border-radius: 30px; /* округлось бегунка */
 }/*# sourceMappingURL=style.css.map */

@@ -71,31 +71,67 @@
                             <ul class="order-stages__list">
                                 <li class="order-stages__item stage-item">
                                     <div class="stage-item__wrap">
-                                        <img src="#" alt="#" class="stage-item__img">
+                                        <img src="./img/icon1.png" alt="#" class="stage-item__img">
+                                    </div>
+                                    <div class="stage-item__points">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
                                     </div>
                                     <p class="stage-item__text">Lorem ipsum dolor sit amet</p>
                                 </li>
                                 <li class="order-stages__item stage-item">
                                     <div class="stage-item__wrap">
-                                        <img src="#" alt="#" class="stage-item__img">
+                                        <img src="./img/icon2.png" alt="#" class="stage-item__img">
+                                    </div>
+                                    <div class="stage-item__points">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
                                     </div>
                                     <p class="stage-item__text">Сonsecteturadipiscing elit</p>
                                 </li>
                                 <li class="order-stages__item stage-item">
                                     <div class="stage-item__wrap">
-                                        <img src="#" alt="#" class="stage-item__img">
+                                        <img src="./img/icon3.png" alt="#" class="stage-item__img">
+                                    </div>
+                                    <div class="stage-item__points">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
                                     </div>
                                     <p class="stage-item__text">Sed do eiusmod tempor</p>
                                 </li>
                                 <li class="order-stages__item stage-item">
                                     <div class="stage-item__wrap">
-                                        <img src="#" alt="#" class="stage-item__img">
+                                        <img src="./img/icon4.png" alt="#" class="stage-item__img">
+                                    </div>
+                                    <div class="stage-item__points">
+                                        <ul>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
                                     </div>
                                     <p class="stage-item__text">Esse cillum dolore eu fugiat</p>
                                 </li>
                                 <li class="order-stages__item stage-item">
                                     <div class="stage-item__wrap">
-                                        <img src="#" alt="#" class="stage-item__img">
+                                        <img src="./img/icon5.png" alt="#" class="stage-item__img">
                                     </div>
                                     <p class="stage-item__text">Excepteur sint occaecat cupidatat non proident</p>
                                 </li>
@@ -104,21 +140,39 @@
                         <div class="order-form">
                             <form action="#" method="get" class="order-form form">
                                 <div class="form__inputs">
-                                    <div>
-                                        <select name="user_profile_color_2" required="required">
+                                    
+                                        <!-- <select name="form__select" class="form__select form__input" required="required">
                                             <option value="">Select the system type</option>
                                             <option value="1">Sed ut perspiciatis</option>
                                             <option value="2">Nemo enim ipsam</option>
                                             <option value="3">Et harum quidem</option>
                                             <option value="4">Temporibus autem</option>
                                             <option value="5">Itaque earum rerum</option>
-                                        </select>
+                                        </select> -->
+
+                                    <div class="form__select" data-state="">
+                                        <div class="form__select-title" data-default="Option 0">Select the system type</div>
+                                        <div class="form__select-content">
+                                            <input id="singleSelect0" class="form__select-input" type="radio" name="singleSelect" checked />
+                                            <label for="singleSelect0" class="form__select-label">Select the system type</label>
+                                            <input id="singleSelect1" class="form__select-input" type="radio" name="singleSelect" />
+                                            <label for="singleSelect1" class="form__select-label">Sed ut perspiciatis</label>
+                                            <input id="singleSelect2" class="form__select-input" type="radio" name="singleSelect"/>
+                                            <label for="singleSelect2" class="form__select-label">Nemo enim ipsam</label>
+                                            <input id="singleSelect3" class="form__select-input" type="radio" name="singleSelect" />
+                                            <label for="singleSelect3" class="form__select-label">Et harum quidem</label>
+                                            <input id="singleSelect4" class="form__select-input" type="radio" name="singleSelect" />
+                                            <label for="singleSelect4" class="form__select-label">Temporibus autem</label>
+                                            <input id="singleSelect4" class="form__select-input" type="radio" name="singleSelect" />
+                                            <label for="singleSelect4" class="form__select-label">Itaque earum rerum</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <input class="form__email form__input" name="to" id="to" value="Your e-mail">
                                     </div>
                                     <div>
-                                        <input name="to" id="to" value="Your e-mail">
-                                    </div>
-                                    <div>
-                                        <input name="to" id="to" value="Your name">
+                                        <input class="form__input" name="to" id="to" value="Your name">
                                     </div>
                                 </div>
                                 <div>
@@ -128,7 +182,7 @@
                                     <div class=""><input type="file" name="f"></div>
                                 </div>
                                 <div class="">
-                                    <input type="submit" value="Отправить"></p>
+                                    <input type="submit" value="Send"></p>
                                 </div>
                               </form>
                         </div>
