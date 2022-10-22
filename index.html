@@ -141,15 +141,6 @@
                             <form action="#" method="get" class="order-form form">
                                 <div class="form__inputs">
                                     
-                                        <!-- <select name="form__select" class="form__select form__input" required="required">
-                                            <option value="">Select the system type</option>
-                                            <option value="1">Sed ut perspiciatis</option>
-                                            <option value="2">Nemo enim ipsam</option>
-                                            <option value="3">Et harum quidem</option>
-                                            <option value="4">Temporibus autem</option>
-                                            <option value="5">Itaque earum rerum</option>
-                                        </select> -->
-
                                     <div class="form__select" data-state="">
                                         <div class="form__select-title" data-default="Option 0">Select the system type</div>
                                         <div class="form__select-content">
@@ -163,8 +154,8 @@
                                             <label for="singleSelect3" class="form__select-label">Et harum quidem</label>
                                             <input id="singleSelect4" class="form__select-input" type="radio" name="singleSelect" />
                                             <label for="singleSelect4" class="form__select-label">Temporibus autem</label>
-                                            <input id="singleSelect4" class="form__select-input" type="radio" name="singleSelect" />
-                                            <label for="singleSelect4" class="form__select-label">Itaque earum rerum</label>
+                                            <input id="singleSelect5" class="form__select-input" type="radio" name="singleSelect" />
+                                            <label for="singleSelect5" class="form__select-label">Itaque earum rerum</label>
                                         </div>
                                     </div>
                                     
@@ -175,13 +166,17 @@
                                         <input class="form__input" name="to" id="to" value="Your name">
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="slidecontainer">
-                                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                <div class="form__attach">
+                                    <div class="form__slider slider">
+                                        <div class="slider__wrapper">
+                                            <div class="slider__label">Sed ut perspiciatis, unde omnis iste natus</div>
+                                            <div class="slider__percent">75 %</div>
+                                        </div>
+                                        <input type="range" min="1" max="100" value="75" class="slider" id="myRange">
                                     </div>
-                                    <div class=""><input type="file" name="f"></div>
+                                    <div class="form__file file"><input type="file" name="f"></div>
                                 </div>
-                                <div class="">
+                                <div class="form__send send">
                                     <input type="submit" value="Send"></p>
                                 </div>
                               </form>

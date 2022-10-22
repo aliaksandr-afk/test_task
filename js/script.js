@@ -7,8 +7,6 @@ let menu = document.querySelector('.menu__body');
 })
 
 
-////////////////
-
 const selectSingle = document.querySelector('.form__select');
 const selectSingle_title = selectSingle.querySelector('.form__select-title');
 const selectSingle_labels = selectSingle.querySelectorAll('.form__select-label');
@@ -29,3 +27,15 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
     selectSingle.setAttribute('data-state', '');
   });
 }
+
+let rng=document.getElementById('myRange');
+// function range() {
+// 	 //rng - это ползунок
+// 	let i1=document.querySelector('.slider__percent'); // i1 - input
+//    	i1.innerHTML=rng.value;
+//  }
+// rng.onchange(alert("1"));
+
+rng.onchange = function() {
+    document.querySelector('.slider__percent').innerHTML = rng.value + " %";
+  };
