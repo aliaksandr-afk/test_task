@@ -174,7 +174,15 @@
                                         </div>
                                         <input type="range" min="1" max="100" value="75" class="slider" id="myRange">
                                     </div>
-                                    <div class="form__file file"><input type="file" name="f"></div>
+                                    <div class="form__file file">
+                                        <div class="input__wrapper">
+                                            <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                                            <label for="input__file" class="input__file-button">
+                                               <span class="input__file-icon-wrapper"><img class="input__file-icon" src="./img/icon attache.jpg" alt="Выбрать файл" width="25"></span>
+                                               <span class="input__file-button-text">Attach a file</span>
+                                            </label>
+                                         </div>
+                                    </div>
                                 </div>
                                 <div class="form__send send">
                                     <input type="submit" value="Send"></p>
