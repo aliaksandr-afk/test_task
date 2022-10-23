@@ -52,6 +52,11 @@ body {
 
 }
 
+//MOBILE SMALL
+@media (max-width: 479.98px) {
+
+}
+
 .header {
     background: rgba(16, 16, 29, 0.9);
     position: fixed;
@@ -96,6 +101,9 @@ body {
     text-align: right;
     text-transform: uppercase;
     color: #ffffff;
+    &:hover {
+        color: #c2ffff;
+    }
 }
 
 .menu__link_active {
@@ -223,7 +231,6 @@ body {
 .main {
 }
 
-/*=================================================*/
 
 .color {
     color: #07C8C8;
@@ -627,6 +634,7 @@ line-height: 22px;
     -moz-appearance: none;
     appearance: none;
     background: rgba(255, 255, 255, 0);
+    
   }
   input[type=range]::-webkit-slider-runnable-track {
     border-radius: 10px/100%;
@@ -657,6 +665,9 @@ line-height: 22px;
     width: 100%;
     position: relative;
     text-align: center;
+    &:hover {
+        color: #007a7a;
+    }
   }
    
   .input__file {
@@ -707,4 +718,84 @@ line-height: 22px;
     
     cursor: pointer;
     margin: 0 auto;
+  }
+
+  .form__send {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 56px 0 0 0;
+  }
+
+  .form__submit {
+    &:hover {
+        background: #005e5e;
+    }
+    width: 370px;
+    height: 48px;
+    background: #07C8C8;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .footer {
+    color:#ffffff;
+    background: #3D4050;
+    height: 80px;
+  }
+  
+  .copy__text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .footer__container {
+    display: flex;
+  }
+
+  .footer__copy {
+    display: flex;
+    padding: 30px 0 0 6px;
+    margin-right: 80px;
+    max-width: 347px;
+  }
+
+  .money__wrapper, .footer__links {
+    margin: 30px 0 10px 0;
+    padding-left: 20px;
+    padding-right: 30px;
+    display:flex;
+    flex-direction: row;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    height: 18px;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    div {
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px 0 20px;
+        img {
+            margin-right: 10px;
+        }
+    }
+  }
+
+  .footer__links {
+    border: none;
+    padding-right: 0;
   }

@@ -162,6 +162,9 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+.menu__link:hover {
+  color: #c2ffff;
+}
 
 .menu__link_active {
   color: #07C8C8;
@@ -271,7 +274,6 @@ body {
     font-size: 20px;
   }
 }
-/*=================================================*/
 .color {
   color: #07C8C8;
   font-weight: 700;
@@ -671,6 +673,9 @@ input[type=range]::-moz-range-thumb {
   position: relative;
   text-align: center;
 }
+.input__wrapper:hover {
+  color: #007a7a;
+}
 
 .input__file {
   opacity: 0;
@@ -712,4 +717,84 @@ input[type=range]::-moz-range-thumb {
   padding-left: 92px;
   cursor: pointer;
   margin: 0 auto;
+}
+
+.form__send {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 56px 0 0 0;
+}
+
+.form__submit {
+  width: 370px;
+  height: 48px;
+  background: #07C8C8;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.form__submit:hover {
+  background: #005e5e;
+}
+
+.footer {
+  color: #ffffff;
+  background: #3D4050;
+  height: 80px;
+}
+
+.copy__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__copy {
+  display: flex;
+  padding: 30px 0 0 6px;
+  margin-right: 80px;
+  max-width: 347px;
+}
+
+.money__wrapper, .footer__links {
+  margin: 30px 0 10px 0;
+  padding-left: 20px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  height: 18px;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+.money__wrapper div, .footer__links div {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px 0 20px;
+}
+.money__wrapper div img, .footer__links div img {
+  margin-right: 10px;
+}
+
+.footer__links {
+  border: none;
+  padding-right: 0;
 }/*# sourceMappingURL=style.css.map */
