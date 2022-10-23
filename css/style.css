@@ -108,11 +108,6 @@ body {
     max-width: 750px;
   }
 }
-@media (max-width: 767.98px) {
-  [class*=container] {
-    max-width: none;
-  }
-}
 .header {
   background: rgba(16, 16, 29, 0.9);
   position: fixed;
@@ -173,6 +168,77 @@ body {
 @media (max-width: 991.98px) {
   [class*=container] {
     max-width: none;
+  }
+  .stage-item__points {
+    display: none;
+  }
+  .form__input {
+    width: 300px !important;
+  }
+  .input__file-button {
+    width: 200px !important;
+    padding-left: 10px !important;
+  }
+  .order-stages__item {
+    margin: 0 !important;
+  }
+  .footer__copy {
+    margin: 0 !important;
+  }
+  .money__wrapper {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 767.98px) {
+  [class*=container] {
+    max-width: none;
+  }
+  .form__input {
+    width: 200px !important;
+  }
+  .money__wrapper, .footer__links {
+    flex-direction: column !important;
+  }
+  .footer {
+    height: 200px !important;
+  }
+  .order-stages__list {
+    flex-direction: column !important;
+  }
+  .order-stages__item {
+    width: 100% !important;
+  }
+  .order {
+    height: 100% !important;
+    max-height: 100% !important;
+    padding-bottom: 30px !important;
+  }
+  .block-text__title {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 479.98px) {
+  .block-text__buttons {
+    flex-direction: column !important;
+  }
+  .block-text__button {
+    width: 160px !important;
+    margin: 20px !important;
+  }
+  .form__inputs {
+    flex-direction: column !important;
+  }
+  .form__input {
+    margin: 20px !important;
+  }
+  .form__attach {
+    flex-direction: column !important;
+  }
+  .form__slider {
+    margin: 20px !important;
+  }
+  .order-text__main-text {
+    font-size: 20px !important;
   }
 }
 .button {
@@ -287,7 +353,6 @@ body {
 
 .block-text {
   max-width: 780px;
-  border: 1px solid red;
 }
 
 .block-text__title {
@@ -382,7 +447,6 @@ body {
   position: relative;
   box-sizing: border-box;
   width: 209px;
-  border: 1px solid green;
   text-align: center;
   margin-right: 30px;
 }
@@ -605,7 +669,7 @@ body {
 .form__slider {
   flex-direction: column;
   display: flex;
-  min-width: 770px;
+  min-width: 54vw;
   margin-right: 30px;
 }
 
